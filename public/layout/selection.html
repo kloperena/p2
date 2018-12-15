@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="../assets/css/stylesheet.css">
+    <link href="https://fonts.googleapis.com/css?family=Sedgwick+Ave" rel="stylesheet">
+    <title>Selections</title>
+</head>
+<body>
+    <div id="container-2">
+        <h2><strong>Pick your Teams!!!</strong></h2>
+        <hr>
+        <h4>Name (Required)</h4>
+        <input type="text" id="name" class="form-control" required>
+        <br>
+        <form>
+            <h3><strong>Pick 1</strong></h3>
+            <div>
+                <div>
+                    <img id="Herbivore" alt="RedSkins">
+                    <input type="radio" class="question1" name="pick1" value="RedSkins" onclick="choices ();">
+                </div>
+                <h5>VS</h5>
+                <div>
+                    <img id="Vegan" alt="Titans">
+                    <input type="radio" class="question1" name="pick1" value="Titans" onclick="choices ();">
+                </div>
+                <button type="reset" id="delete-button">delete</button>
+                
+            </div>
+        </form>
+        <form>
+            <h3><strong>Pick 2</strong></h3>
+            <div>
+                <div>
+                    <img id="Herbivore" alt="RedSkins">
+                    <input type="radio" class="question1" name="pick2" value="Ravens" onclick="choices ();">
+                </div>
+                <h5>VS</h5>
+                <div>
+                    <img id="Vegan" alt="Titans">
+                    <input type="radio" class="question1" name="pick2" value="Chargers" onclick="choices ();">
+                </div>
+                <button type="reset" id="delete-button">delete</button>
+            </div>
+        </form>
+        <form>
+            <h3><strong>Pick 3</strong></h3>
+            <div>
+                <div>
+                    <img id="Herbivore" alt="RedSkins">
+                    <input type="radio" class="question1" name="pick3" value="Bengals" onclick="choices ();">
+                </div>
+                <h5>VS</h5>
+                <div>
+                    <img id="Vegan" alt="Titans">
+                    <input type="radio" class="question1" name="pick3" value="Browns" onclick="choices ();">
+                </div>
+                <button type="reset" id="delete-button">delete</button>
+            </div>
+        </form>
+
+        <form>
+            <h3><strong>Pick 4 </strong></h3>
+            <div>
+                <div>
+                    <img id="Herbivore" alt="Buccaneers">
+                    <input type="radio" class="question1" name="pick4" value="Buccaneers" onclick="choices ();">
+                </div>
+                <h5>VS</h5>
+                <div>
+                    <img id="Vegan" alt="Cowboys">
+                    <input type="radio" class="question1" name="pick4" value="Cowboys" onclick="choices ();">
+                </div>
+                <button type="reset" id="delete-button">delete</button>
+            </div>
+        </form>
+
+        <form>
+            <h3><strong>Pick 5 </strong></h3>
+            <div>
+                <div>
+                    <img id="Herbivore" alt="Vikings">
+                    <input type="radio" class="question1" name="pick5" value="Vikings" onclick="choices ();">
+                </div>
+                <h5>VS</h5>
+                <div>
+                    <img id="Vegan" alt="Lions">
+                    <input type="radio" class="question1" name="pick5" value="Lions" onclick="choices ();">
+                </div>
+                <button type="reset" id="delete-button">delete</button>
+            </div>
+        </form>
+
+        <form>
+            <h3><strong>Pick 6 </strong></h3>
+            <div>
+                <div>
+                    <img id="Herbivore" alt="Bills">
+                    <input type="radio" class="question1" name="pick6" value="Bills" onclick="choices ();">
+                </div>
+                <h5>VS</h5>
+                <div>
+                    <img id="Vegan" alt="Patriots">
+                    <input type="radio" class="question1" name="pick6" value="Patriots" onclick="choices ();">
+                </div>
+                <button type="reset" id="delete-button">delete</button>
+            </div>
+        </form>
+
+        <form>
+            <h3><strong>Pick 7 </strong></h3>
+            <div>
+                <div>
+                    <img id="Herbivore" alt="Packers">
+                    <input type="radio" class="question1" name="pick7" value="Packers" onclick="choices ();">
+                </div>
+                <h5>VS</h5>
+                <div>
+                    <img id="Vegan" alt="Jets">
+                    <input type="radio" class="question1" name="pick7" value="Jets" onclick="choices ();">
+                </div>
+                <button type="reset" id="delete-button">delete</button>
+            </div>
+        </form>
+
+        <form>
+            <h3><strong>Pick 8 </strong></h3>
+            <div>
+                <div>
+                    <img id="Herbivore" alt="Texans">
+                    <input type="radio" class="question1" name="pick8" value="Texans" onclick="choices ();">
+                </div>
+                <h5>VS</h5>
+                <div>
+                    <img id="Vegan" alt="Eagales">
+                    <input type="radio" class="question1" name="pick8" value="Eagales" onclick="choices ();">
+                </div>
+                <button type="reset" id="delete-button">delete</button>
+            </div>
+        </form>
+
+        <form>
+            <h3><strong>Pick 9 </strong></h3>
+            <div>
+                <div>
+                    <img id="Herbivore" alt="Falcons">
+                    <input type="radio" class="question1" name="pick9" value="Falcons" onclick="choices ();">
+                </div>
+                <h5>VS</h5>
+                <div>
+                    <img id="Vegan" alt="Panthers">
+                    <input type="radio" class="question1" name="pick9" value="Panthers" onclick="choices ();">
+                </div>
+                <button type="reset" id="delete-button">delete</button>
+            </div>
+        </form>
+
+        <form>
+            <h3><strong>Pick 10 </strong></h3>
+            <div>
+                <div>
+                    <img id="Herbivore" alt="Giants">
+                    <input type="radio" class="question1" name="pick10" value="Giants" onclick="choices ();">
+                </div>
+                <h5>VS</h5>
+                <div>
+                    <img id="Vegan" alt="Colts">
+                    <input type="radio" class="question1" name="pick10" value="Colts" onclick="choices ();">
+                </div>
+                <button type="reset" id="delete-button">delete</button>
+            </div>
+        </form>
+        <form>
+            <h3><strong>Pick 11 </strong></h3>
+            <div>
+                <div>
+                    <img id="Herbivore" alt="Jaguars">
+                    <input type="radio" class="question1" name="pick11" value="Jaguars" onclick="choices ();">
+                </div>
+                <h5>VS</h5>
+                <div>
+                    <img id="Vegan" alt="Dolphins">
+                    <input type="radio" class="question1" name="pick11" value="Dolphins" onclick="choices ();">
+                </div>
+                <button type="reset" id="delete-button">delete</button>
+            </div>
+        </form>
+        <form>
+            <h3><strong>Pick 12 </strong></h3>
+            <div>
+                <div>
+                    <img id="Herbivore" alt="Rams">
+                    <input type="radio" class="question1" name="pick12" value="Rams" onclick="choices ();">
+                </div>
+                <h5>VS</h5>
+                <div>
+                    <img id="Vegan" alt="Cardinals">
+                    <input type="radio" class="question1" name="pick12" value="Cardinals" onclick="choices ();">
+                </div>
+                <button type="reset" id="delete-button">delete</button>
+            </div>
+        </form>
+        <form>
+            <h3><strong>Pick 13 </strong></h3>
+            <div>
+                <div>
+                    <img id="Herbivore" alt="Bears">
+                    <input type="radio" class="question1" name="pick13" value="Bears" onclick="choices ();">
+                </div>
+                <h5>VS</h5>
+                <div>
+                    <img id="Vegan" alt="49ERS">
+                    <input type="radio" class="question1" name="pick13" value="49ERS" onclick="choices ();">
+                </div>
+                <button type="reset" id="delete-button">delete</button>
+            </div>
+        </form>
+        <form>
+            <h3><strong>Pick 14 </strong></h3>
+            <div>
+                <div>
+                    <img id="Herbivore" alt="Steelers">
+                    <input type="radio" class="question1" name="pick14" value="Steelers" onclick="choices ();">
+                </div>
+                <h5>VS</h5>
+                <div>
+                    <img id="Vegan" alt="Saints">
+                    <input type="radio" class="question1" name="pick14" value="Saints" onclick="choices ();">
+                </div>
+                <button type="reset" id="delete-button">delete</button>
+            </div>
+        </form>
+        <form>
+            <h3><strong>Pick 15 </strong></h3>
+            <div>
+                <div>
+                    <img id="Herbivore" alt="Steelers">
+                    <input type="radio" class="question1" name="pick15" value="Steelers" onclick="choices ();">
+                </div>
+                <h5>VS</h5>
+                <div>
+                    <img id="Vegan" alt="Saints">
+                    <input type="radio" class="question1" name="pick15" value="Saints" onclick="choices ();">
+                </div>
+                <button type="reset" id="delete-button">delete</button>
+            </div>
+        </form>
+        <form>
+                <h3><strong>Pick 16 </strong></h3>
+                <div>
+                    <div>
+                        <img id="Herbivore" alt="Chiefs">
+                        <input type="radio" class="question1" name="pick16" value="Chiefs" onclick="choices ();">
+                    </div>
+                    <h5>VS</h5>
+                    <div>
+                        <img id="Vegan" alt="Seahawks">
+                        <input type="radio" class="question1" name="pick16" value="Seahawks" onclick="choices ();">
+                    </div>
+                    <button type="reset" id="delete-button">delete</button>
+                </div>
+            </form>
+            <form>
+                    <h3><strong>Pick 17 </strong></h3>
+                    <div>
+                        <div>
+                            <img id="Herbivore" alt="Broncos">
+                            <input type="radio" class="question1" name="pick17" value="Broncos" onclick="choices ();">
+                        </div>
+                        <h5>VS</h5>
+                        <div>
+                            <img id="Vegan" alt="Raiders">
+                            <input type="radio" class="question1" name="pick17" value="Raiders" onclick="choices ();">
+                        </div>
+                        <button type="reset" id="delete-button">delete</button>
+                    </div>
+                </form>
+                <div>
+                        <button type="submit" id="submit-button">Submit</button>
+                    </div>
+
+    </div>
+
+    <script>
+        var usersInput= [];
+        
+                function choices(){
+                    document.getElementsByName
+                }
+
+
+    </script>
+
+</body>
+
+</html>
