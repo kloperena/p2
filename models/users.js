@@ -1,4 +1,4 @@
-var orm = require("../config/orm.js");
+var orm = require("../config/pass.orm");
 
 var user = {
   selectWhere: function (cols, vals, cb) {

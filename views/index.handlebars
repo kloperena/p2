@@ -1,0 +1,36 @@
+<h1><strong>Football Battle Royale</strong></h1>
+<hr>
+      <h4>Name (Required)</h4>
+      <input type="text" id="name" class="form-control" required>
+      <br>
+    
+    <div class="form-group">
+  <label for "winner">Pick your winner</label><br>
+  <p>will the {{this.home}} win against the {{this.away}}???</p>
+  <input type = "radio" name="winner" value="1"  checked {{home}}> Duh<br>
+  <input type = "radio" name="winner" value="0" {{away}} > No Way <br>
+  <button class="update choice" data-id="{{this.id}}" >update choice</button>
+</div>
+<br> 
+ <button type="submit">Submit</button>
+ 
+ <hr>
+
+<h2>Your Winners!</h2>
+<ul>
+  {{#each games}}
+    {{#unless winner}}
+      {{>games/games.block winner=true}}
+      {{/unless}}
+      {{/each}}
+</ul>
+<hr>
+<h2>The Losser!</h2>
+<ul>
+  {{#each games}}
+    {{#if winner}}
+      {{>games/games.block winner=false}}
+      {{/if}}
+      {{/each}}
+</ul>
+</form>
