@@ -1,4 +1,4 @@
-var connection = require("./pass.connection");
+var connection = require("./connection");
 
 var orm = {
   selectWhere: function (tableInput, colToSearch, valOfCol, cb) {

@@ -1,3 +1,3 @@
 $(document).ready(function() {
-  handleLoginSugnup("form.signup", "/api/signup")
+  handleLoginSugnup("button.signup", "/api/signup")
 });

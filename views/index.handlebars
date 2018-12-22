@@ -1,36 +1,20 @@
-<h1><strong>Football Battle Royale</strong></h1>
-<hr>
-      <h4>Name (Required)</h4>
-      <input type="text" id="name" class="form-control" required>
-      <br>
-    
-    <div class="form-group">
-  <label for "winner">Pick your winner</label><br>
-  <p>will the {{this.home}} win against the {{this.away}}???</p>
-  <input type = "radio" name="winner" value="1"  checked {{home}}> Duh<br>
-  <input type = "radio" name="winner" value="0" {{away}} > No Way <br>
-  <button class="update choice" data-id="{{this.id}}" >update choice</button>
-</div>
-<br> 
- <button type="submit">Submit</button>
- 
- <hr>
+<h1>Football Battle Royale</h1>
 
-<h2>Your Winners!</h2>
 <ul>
   {{#each games}}
-    {{#unless winner}}
-      {{>games/games.block winner=true}}
-      {{/unless}}
-      {{/each}}
+  <form data-id="{{this.id}}" id="{{this.id}}" class="create-form" >
+    <div class="form-group">
+      <label for="team" value="{{id}}">{{week16}}</label>
+      <br>
+      <input type="radio" name="team" value="{{this.Home}}" checked> {{Home}}
+      <input type="radio" name="team" value="{{this.away}}"> {{away}}
+    </div>
+
+    <button data-id="{{this.id}}" type="submit">make your pick</button>
+    <button data-id="{{this.id}}" class="delquote">Delete</button>
+    <button data-id="{{this.id}}" id="update-form" class="send" >Update pick</button>
+  </form>
+  {{/each}}
 </ul>
-<hr>
-<h2>The Losser!</h2>
-<ul>
-  {{#each games}}
-    {{#if winner}}
-      {{>games/games.block winner=false}}
-      {{/if}}
-      {{/each}}
-</ul>
-</form>
+
+ <a href="/results">view your picks</a>
